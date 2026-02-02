@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>02 feb 2026
+  </title>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    #login {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    input {
+      padding: 10px;
+      width: 220px;
+      margin: 10px;
+    }
+
+    button {
+      padding: 10px 25px;
+      background: #ff4d6d;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+    }
+
+    #error {
+      color: red;
+    }
+
+    #content {
+      display: none;
+    }
+
+    img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="login">
+  <h2>🔒 Private Access</h2>
+  <input type="password" id="password" placeholder="Enter password">
+  <br>
+  <button onclick="checkPassword()">Enter</button>
+  <p id="error"></p>
+</div>
+
+<div id="content">
+  <h1>Today😍</h1>
+
+  <p>
+    02 feb 2026
+  </p>
+ <img src="img1.jpg">
+  <img src="img2.jpg">
+  <img src="img3.jpg">
+  <img src="img4.jpg">
+  <img src="img5.jpg">
+  <img src="img6.jpg">
+  <img src="img7.jpg">
+  <img src="img8.jpg">
+  <img src="img9.jpg">
+  <img src="img10.jpg">
+  <img src="img11.jpg">
+  <img src="img12.jpg">
+  <img src="img13.jpg">
+  <img src="img14.jpg">
+</div>
+
+<script>
+  function checkPassword() {
+    var correctPassword = "bca.327";  // 👈 CHANGE PASSWORD HERE
+    var entered = document.getElementById("password").value;
+
+    if (entered === correctPassword) {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    } else {
+      document.getElementById("error").innerText = "Wrong password 😅";
+    }
+  }
+</script>
+
+</body>
+</html>
